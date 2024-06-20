@@ -4,7 +4,10 @@ import ROIA.IAM.DTO.UserRequest;
 import ROIA.IAM.DTO.UserResponse;
 import ROIA.IAM.Service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
@@ -18,7 +21,7 @@ public class UserController {
         return userService.userSignUp(userRequest);
     }
 
-    @GetMapping("/login")
+    @PostMapping(value = "/login")
     public UserResponse userSignIn(@RequestBody UserRequest userRequest) throws Exception {
         return userService.userSignIn(userRequest);
     }
