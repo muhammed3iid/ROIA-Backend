@@ -22,6 +22,7 @@
     <module>user-service</module>
     <module>unit-service</module>
     <module>discovery-server</module>
+    <module>discovery-server</module>
   </modules>
 
 
