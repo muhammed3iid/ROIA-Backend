@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ROIA</groupId>
-	<artifactId>Units-service</artifactId>
+	<artifactId>unit-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Units-service</name>
-	<description>Units component</description>
+	<name>unit-service</name>
+	<description>Unit component</description>
 	<url/>
 	<licenses>
 		<license/>
