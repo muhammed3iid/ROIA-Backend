@@ -14,6 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="untitled" target="17" />
       <module name="User-service" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -23,6 +24,7 @@
       <module name="User-service" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
       <module name="unit-service" options="-parameters" />
+      <module name="untitled" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>
