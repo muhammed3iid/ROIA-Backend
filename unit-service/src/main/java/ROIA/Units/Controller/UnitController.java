@@ -2,7 +2,7 @@ package ROIA.Units.Controller;
 
 import ROIA.Units.DTO.UnitRequest;
 import ROIA.Units.DTO.UnitResponse;
-import ROIA.Units.Service.UnitsService;
+import ROIA.Units.Service.UnitService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,9 +11,9 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/units")
-public class UnitsController {
+public class UnitController {
 
-    private final UnitsService unitsService;
+    private final UnitService unitsService;
 
     @GetMapping("/get-units")
     public List<UnitResponse> getAllUnits(){

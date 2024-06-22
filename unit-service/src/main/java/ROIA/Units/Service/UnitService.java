@@ -3,7 +3,7 @@ package ROIA.Units.Service;
 import ROIA.Units.DTO.UnitRequest;
 import ROIA.Units.DTO.UnitResponse;
 import ROIA.Units.Model.Unit;
-import ROIA.Units.Repository.UnitsRepository;
+import ROIA.Units.Repository.UnitRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
@@ -14,12 +14,12 @@ import java.util.List;
 
 @Service
 @Transactional
-public class UnitsService {
+public class UnitService {
 
-    private final UnitsRepository unitsRepository;
+    private final UnitRepository unitsRepository;
 
     @Autowired
-    public UnitsService(UnitsRepository unitsRepository) {
+    public UnitService(UnitRepository unitsRepository) {
         this.unitsRepository = unitsRepository;
     }
 
