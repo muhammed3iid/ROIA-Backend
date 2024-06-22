@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="IAM-service" />
         <module name="user-service" />
         <module name="unit-service" />
+        <module name="discovery-server" />
+        <module name="IAM-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
