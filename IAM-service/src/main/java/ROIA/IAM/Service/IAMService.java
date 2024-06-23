@@ -10,12 +10,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Transactional
-public class UserService {
+public class IAMService {
 
     private final IAuthentication authenticationProxy;
 
     @Autowired
-    public UserService(IAuthentication authenticationProxy) {
+    public IAMService(IAuthentication authenticationProxy) {
         this.authenticationProxy = authenticationProxy;
     }
 

@@ -2,7 +2,7 @@ package ROIA.IAM.Controller;
 
 import ROIA.IAM.DTO.UserRequest;
 import ROIA.IAM.DTO.UserResponse;
-import ROIA.IAM.Service.UserService;
+import ROIA.IAM.Service.IAMService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/user")
-public class UserController {
+@RequestMapping("/api/iam")
+public class IAMController {
 
-    private final UserService userService;
+    private final IAMService userService;
 
     @PostMapping("/register")
     public UserResponse userSignUp(@RequestBody UserRequest userRequest) throws Exception {
