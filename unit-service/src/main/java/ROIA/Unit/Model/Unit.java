@@ -1,11 +1,19 @@
-package ROIA.Units.DTO;
+package ROIA.Unit.Model;
 
-import lombok.Builder;
-import lombok.Data;
+import jakarta.persistence.*;
+import lombok.*;
 
-@Data
+@Entity
+@Table(name = "units")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class UnitResponse {
+public class Unit {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
     private boolean status;
@@ -19,3 +27,5 @@ public class UnitResponse {
     private String amenities;
     private String developer;
 }
+
+

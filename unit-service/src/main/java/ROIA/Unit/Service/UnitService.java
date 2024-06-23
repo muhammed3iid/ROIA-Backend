@@ -1,9 +1,9 @@
-package ROIA.Units.Service;
+package ROIA.Unit.Service;
 
-import ROIA.Units.DTO.UnitRequest;
-import ROIA.Units.DTO.UnitResponse;
-import ROIA.Units.Model.Unit;
-import ROIA.Units.Repository.UnitRepository;
+import ROIA.Unit.DTO.UnitRequest;
+import ROIA.Unit.DTO.UnitResponse;
+import ROIA.Unit.Model.Unit;
+import ROIA.Unit.Repository.UnitRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;

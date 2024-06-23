@@ -1,13 +1,13 @@
-package ROIA.Units;
+package ROIA.Unit;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UnitApplication {
+public class UnitServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UnitApplication.class, args);
+		SpringApplication.run(UnitServiceApplication.class, args);
 	}
 
 }

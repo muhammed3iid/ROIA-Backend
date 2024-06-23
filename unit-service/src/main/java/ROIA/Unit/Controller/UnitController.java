@@ -1,8 +1,8 @@
-package ROIA.Units.Controller;
+package ROIA.Unit.Controller;
 
-import ROIA.Units.DTO.UnitRequest;
-import ROIA.Units.DTO.UnitResponse;
-import ROIA.Units.Service.UnitService;
+import ROIA.Unit.DTO.UnitRequest;
+import ROIA.Unit.DTO.UnitResponse;
+import ROIA.Unit.Service.UnitService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

@@ -12,7 +12,7 @@
 	<groupId>ROIA</groupId>
 	<artifactId>IAM-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>IAM</name>
+	<name>IAM-service</name>
 	<description>Identity and access management component</description>
 
 

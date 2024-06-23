@@ -1,4 +1,4 @@
-package ROIA.Units.DTO;
+package ROIA.Unit.DTO;
 
 import lombok.Data;
 

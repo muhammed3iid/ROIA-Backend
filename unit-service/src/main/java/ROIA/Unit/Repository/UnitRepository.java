@@ -1,6 +1,6 @@
-package ROIA.Units.Repository;
+package ROIA.Unit.Repository;
 
-import ROIA.Units.Model.Unit;
+import ROIA.Unit.Model.Unit;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.JpaRepository;
 
