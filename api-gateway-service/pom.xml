@@ -12,7 +12,7 @@
     <groupId>ROIA</groupId>
     <artifactId>api-gateway-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>API-gateway</name>
+    <name>api-gateway-service</name>
     <description>API gateway component</description>
 
     <properties>
