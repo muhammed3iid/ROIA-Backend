@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: Mm22558800
+      MYSQL_DATABASE: roia-test
+    ports:
+      - "3307:3306"
+    networks:
+      - roia-network
+
+  eureka-discovery-server:
+    build:
+      context: ./eureka-discovery-server
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+    networks:
+      - roia-network
+
+  api-gateway-service:
+    build:
+      context: ./api-gateway-service
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - eureka-discovery-server
+    environment:
+      - SPRING_APPLICATION_NAME=api-gateway-service
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-discovery-server:8761/eureka
+    networks:
+      - roia-network
+
+  identity-access-management-service:
+    build:
+      context: ./identity-access-management-service
+      dockerfile: Dockerfile
+    depends_on:
+      - eureka-discovery-server
+      - mysql
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/roia-test
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=Mm22558800
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.MySQLDialect
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-discovery-server:8761/eureka
+      - SERVER_PORT=0
+      - SPRING_APPLICATION_NAME=identity-access-management-service
+    networks:
+      - roia-network
+
+networks:
+  roia-network:
+    driver: bridge
