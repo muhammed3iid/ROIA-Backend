@@ -3,7 +3,9 @@ version: '3.8'
 services:
 
   mysql:
-    image: mysql:8.0
+    build:
+      context: .
+      dockerfile: ./identity-access-management-service/db.Dockerfile
     environment:
       MYSQL_ROOT_PASSWORD: Mm22558800
       MYSQL_DATABASE: roia-test
