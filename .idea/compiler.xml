@@ -15,6 +15,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="credential-management-service" target="17" />
       <module name="microservices-parent" target="17" />
       <module name="unit-service" target="17" />
       <module name="Units-service" target="17" />
@@ -24,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Units-service" options="-parameters" />
       <module name="api-gateway-service" options="-parameters" />
+      <module name="credential-management-service" options="-parameters" />
       <module name="eureka-discovery-server" options="-parameters" />
       <module name="identity-access-management-service" options="-parameters" />
       <module name="unit-management-service" options="-parameters" />
