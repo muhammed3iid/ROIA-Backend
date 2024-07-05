@@ -12,6 +12,7 @@
         <module name="api-gateway-service" />
         <module name="user-management-service" />
         <module name="eureka-discovery-server" />
+        <module name="shared-unit-management-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,6 +29,7 @@
       <module name="credential-management-service" options="-parameters" />
       <module name="eureka-discovery-server" options="-parameters" />
       <module name="identity-access-management-service" options="-parameters" />
+      <module name="shared-unit-management-service" options="-parameters" />
       <module name="unit-management-service" options="-parameters" />
       <module name="unit-service" options="-parameters" />
       <module name="user-management-service" options="-parameters" />
